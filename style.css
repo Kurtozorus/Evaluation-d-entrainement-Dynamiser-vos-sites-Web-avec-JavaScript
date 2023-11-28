@@ -1,0 +1,55 @@
+/* -------reset------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+@font-face {
+    font-family: 'Lato' ;
+    src: url('Assets/images/Fonts/Lato-Regular.ttf');
+}
+#plateau {
+    border: solid 10px #b8860b;
+    width: auto;
+    height: 430px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+svg {
+    cursor: pointer;
+}
+.img-fluid{
+    box-shadow: 1px 2px 70px rgb(202, 199, 199);
+    width: 80px;
+    height: 80px;
+}
+.box {
+    width: 90px;
+    height: 30px;
+    background-color: red;
+    margin: auto;
+}
+.shake {
+    animation: shake 0.5s infinite;
+}
+@keyframes shake {
+    0% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}
+
+@media (max-width: 501px) {
+    .min {
+        font-size: small;
+    }
+}
