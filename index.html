@@ -34,8 +34,10 @@
           </div>
         </div>
         <div class="row justify-content-around mt-5">
-          <div class="col-4 text-center" id="dot1">PLAYER 1 
-            <div id="global1">00
+          <div class="col-4 text-center"><h2>PLAYER 1 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" id="dot1" class="bi bi-dot text-danger" viewBox="0 0 16 16">
+            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+          </svg></h2>
+            <div class="sizeg" id="globalsc1">0
             </div>
           </div>
           <div class="col-4" id="dice">
@@ -46,19 +48,21 @@
               alt="un dés de face un"
             />
           </div>
-          <div class="col-4" id="dot2">PLAYER 2 
-            <div id="global2">00
+          <div class="col-4"><h2>PLAYER 2 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" id="dot2" class="bi bi-dot text-danger dot2d" viewBox="0 0 16 16">
+            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+          </svg></h2> 
+            <div class="sizeg" id="globalsc2">0
           </div>
         </div>
         </div>
         <div class="row justify-content-around mt-5">
           <div class="col-4 text-center">
             <div class=" box">CURRENT</div>
-            <div class="box text-light" id="round1">0</div>
+            <div class="box text-light sizec" id="score1">0</div>
           </div>
           <div class="col-4">
             <div class="min">
-              <button class="btn" id="roll"><svg
+              <button class="btn" class="disabled" id="roll"><svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
                 height="32"
@@ -97,11 +101,11 @@
               />
             </svg></button>HOLD</div>
           </div>
-          <div class="col-4 current">
+          <div class="col-4 current ">
             <div class="box">
               CURRENT
             </div>
-            <div class="box text-light" id="round2">0</div>
+            <div class="box text-light sizec" id="score2">0</div>
           </div>
         </div>
       </div>

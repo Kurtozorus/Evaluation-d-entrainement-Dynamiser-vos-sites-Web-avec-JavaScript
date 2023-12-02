@@ -12,12 +12,20 @@ body {
     font-family: 'Lato' ;
     src: url('Assets/images/Fonts/Lato-Regular.ttf');
 }
+.sizeg {
+    font-size: 40px;
+    color: red;
+}
+.sizec {
+    font-size: 20px;
+}
 #plateau {
     border: solid 10px #b8860b;
     width: auto;
-    height: 430px;
+    height: 500px;
     padding-top: 10px;
     padding-bottom: 20px;
+    background: linear-gradient(to left, #FFFFFF 50%,#f0f4f4 20%)
 }
 svg {
     cursor: pointer;
@@ -35,6 +43,13 @@ svg {
 }
 .shake {
     animation: shake 0.5s infinite;
+}
+/* Affichage du point rouge*/
+.dot1d {
+    opacity: 0;
+}
+.dot2d {
+    opacity: 0;
 }
 @keyframes shake {
     0% {
