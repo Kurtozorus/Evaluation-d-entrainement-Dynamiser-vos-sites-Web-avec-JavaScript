@@ -3,15 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jeu du dé à 2 joueurs, le premier à 100 point remporte la partie!" />
+    <meta name="author" content="Olivier Marchand" />
     <title>Jeu du dé</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/Assets/images/Fonts/Lato/Lato-LightItalic.ttf">
     <link rel="stylesheet" href="Assets/bootstrap.min.css" />
   </head>
 
   <body>
     <div class="container-xxl text-center">
       <div id="plateau">
-        <div class="row align-items-start mt-5">
+        <div class="row mt-5">
           <div class="col-12">
             <button id="new-game" class="btn">
               <svg
@@ -33,11 +36,11 @@
             NEW GAME
           </div>
         </div>
-        <div class="row justify-content-around mt-5">
-          <div class="col-4 text-center"><h2>PLAYER 1 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" id="dot1" class="bi bi-dot text-danger" viewBox="0 0 16 16">
+        <div class="d-flex mt-5">
+          <div class="col-4 "> <div class="d-flex justify-content-end"><h2 class="">PLAYER 1 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" id="dot1" class="bi bi-dot text-danger " viewBox="0 0 16 16">
             <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
-          </svg></h2>
-            <div class="sizeg" id="globalsc1">0
+          </svg></h2></div>
+            <div class="d-flex justify-content-center sizeg1" id="globalsc1">0
             </div>
           </div>
           <div class="col-4" id="dice">
@@ -45,24 +48,26 @@
               class="img-fluid"
               src="Assets/images/dice-01.png"
               id="dic"
-              alt="un dés de face un"
+              alt="un dé de face un"
             />
           </div>
-          <div class="col-4"><h2>PLAYER 2 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" id="dot2" class="bi bi-dot text-danger dot2d" viewBox="0 0 16 16">
+          <div class="col-4"><div class="d-flex justify-content-start"><h2>PLAYER 2 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" id="dot2" class="bi bi-dot text-danger dot2d" viewBox="0 0 16 16">
             <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
-          </svg></h2> 
-            <div class="sizeg" id="globalsc2">0
+          </svg></h2></div> 
+            <div class="d-flex justify-content-start sizeg2" id="globalsc2">0
           </div>
         </div>
         </div>
         <div class="row justify-content-around mt-5">
-          <div class="col-4 text-center">
-            <div class=" box">CURRENT</div>
-            <div class="box text-light sizec" id="score1">0</div>
+          <div class="col-4">
+            <div class="box1">
+              CURRENT
+            </div>
+            <div class="box1 text-light sizec" id="score1">0</div>
           </div>
           <div class="col-4">
             <div class="min">
-              <button class="btn" class="disabled" id="roll"><svg
+              <button class="btn" id="roll"><svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
                 height="32"
@@ -101,11 +106,11 @@
               />
             </svg></button>HOLD</div>
           </div>
-          <div class="col-4 current ">
-            <div class="box">
+          <div class="col-4 ">
+            <div class="box2">
               CURRENT
             </div>
-            <div class="box text-light sizec" id="score2">0</div>
+            <div class="box2 text-light sizec" id="score2">0</div>
           </div>
         </div>
       </div>

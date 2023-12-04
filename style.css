@@ -4,28 +4,27 @@
     padding: 0;
 }
 
-body {
-    font-family: "Lato", sans-serif;
-}
-
-@font-face {
-    font-family: 'Lato' ;
-    src: url('Assets/images/Fonts/Lato-Regular.ttf');
-}
-.sizeg {
+.sizeg1 {
     font-size: 40px;
     color: red;
+    margin-left: 100px;
+}
+.sizeg2 {
+    font-size: 40px;
+    color: red;
+    margin-left: 60px;
 }
 .sizec {
     font-size: 20px;
 }
 #plateau {
+    font-family: 'Lato';
     border: solid 10px #b8860b;
     width: auto;
     height: 500px;
     padding-top: 10px;
     padding-bottom: 20px;
-    background: linear-gradient(to left, #FFFFFF 50%,#f0f4f4 20%)
+    background: linear-gradient(to left, #FFFFFF 50%,#f0f4f4 20%)  
 }
 svg {
     cursor: pointer;
@@ -35,21 +34,20 @@ svg {
     width: 80px;
     height: 80px;
 }
-.box {
+.box1 {
     width: 90px;
     height: 30px;
     background-color: red;
-    margin: auto;
+    margin-left: 215px;
+}
+.box2 {
+    width: 90px;
+    height: 30px;
+    background-color: red;
+    margin-left: 5px;
 }
 .shake {
     animation: shake 0.5s infinite;
-}
-/* Affichage du point rouge*/
-.dot1d {
-    opacity: 0;
-}
-.dot2d {
-    opacity: 0;
 }
 @keyframes shake {
     0% {
@@ -63,8 +61,76 @@ svg {
     }
 }
 
-@media (max-width: 501px) {
+/* Affichage du point rouge*/
+.dot1d {
+    opacity: 0;
+}
+.dot2d {
+    opacity: 0;
+}
+@media (max-width: 1155px) {
     .min {
         font-size: small;
+    }
+    .box1 {
+        width: 90px;
+        height: 30px;
+        background-color: red;
+        margin-left: 140px;
+    }
+    .sizeg1 {
+        font-size: 40px;
+        color: red;
+        margin-left: 10px;
+    }
+}
+@media (max-width: 800px) {
+    .min {
+        font-size: small;
+    }
+    .box1 {
+        width: 90px;
+        height: 30px;
+        background-color: red;
+        margin-left: 80px;
+    }
+}
+@media (max-width: 700px) {
+    .min {
+        font-size: small;
+    }
+    .box1 {
+        width: 90px;
+        height: 30px;
+        background-color: red;
+        margin-left: 60px;
+    }
+}
+@media (max-width: 600px) {
+    .min {
+        font-size: small;
+    }
+    .box1 {
+        width: 90px;
+        height: 30px;
+        background-color: red;
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 500px) {
+    .min {
+        font-size: small;
+    }
+    .box1 {
+        width: 90px;
+        height: 30px;
+        background-color: red;
+        margin-left: 30px;
+    }
+    .sizeg1 {
+        font-size: 40px;
+        color: red;
+        margin-left: 10px;
     }
 }
