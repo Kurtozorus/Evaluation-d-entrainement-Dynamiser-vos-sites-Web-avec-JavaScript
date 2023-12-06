@@ -133,4 +133,8 @@ svg {
         color: red;
         margin-left: 10px;
     }
+    #plateau {
+        width: auto;
+        height: 550px;
+    }
 }
