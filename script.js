@@ -48,14 +48,14 @@ function roll()  {
     if(round == 0) {
         // Lancer du dé joueur 1
         // On récupére le résultat dans une variable et on l'ajoute l'affichage
-        current1 = diceResult;
+        current1 += diceResult;
         ROUND1Score.innerHTML = current1;
         // On réactive le bouton hold par son id (pourde nouveau appuyer sur le boutton hold)
         document.querySelector('#hold').disabled = false;
     }else {
         // Lancer les dés joueur 2
         // On récupére le résultat dans une variable et on l'ajoute l'affichage
-        current2 = diceResult;
+        current2 += diceResult;
         ROUND2Score.innerHTML = current2;
         // On réactive le bouton hold par son id (pourde nouveau appuyer sur le boutton hold)
         document.querySelector('#hold').disabled = false;
@@ -96,9 +96,10 @@ rollDice.addEventListener('click', () =>{
 function keephold() {
     if(round == 0) {
         //Récupére le résultat du dé (diceResult) on l'ajoute a global puis on l'affiche dans globale1
-        global1 += diceResult;
+        global1 += current1;
         GLOBAL1Score.innerHTML = global1;
         ROUND1Score.innerHTML = 0;
+        current1 = 0;
         diceResult = 0;
         //Change l'affichage du joueur et passe au joueur 2
         dote1.classList.add('dot1d');
@@ -109,9 +110,10 @@ function keephold() {
         round++
     }else {
         //Récupére le résultat du dé (diceResult) on l'ajoute a global puis on l'affiche dans globale2
-        global2 += diceResult;
+        global2 += current2;
         GLOBAL2Score.innerHTML = global2;
         ROUND2Score.innerHTML = 0;
+        current2 = 0;
         diceResult = 0;
         //Change l'affichage du joueur et passe au joueur 1
         dote2.classList.add('dot2d');
@@ -144,6 +146,8 @@ function restart() {
     ROUND2Score.innerHTML = 0;
     GLOBAL1Score.innerHTML = 0;
     GLOBAL2Score.innerHTML = 0;
+    current1 = 0;
+    current2 = 0;
     global1 = 0;
     global2 = 0;
     round = 0;
